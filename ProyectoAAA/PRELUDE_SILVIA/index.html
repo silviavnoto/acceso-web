@@ -11,6 +11,11 @@
 </head>
 
 <body>
+    <nav>
+        <a href="#main-content" class="skip-link" aria-label="Saltar a la sección principal de la página">
+            Skip to main content</a>
+    </nav>
+
     <div class="background-container">
         <div class="line">
             <header>
@@ -21,20 +26,25 @@
 
 
                 <!-- Checkbox oculto para controlar el menú -->
-                <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-                <label for="menu-toggle" class="menu-icon">☰</label>
+                <input type="checkbox" id="menu-toggle" name="menu-toggle" class="menu-checkbox">
+                <label for="menu-toggle" class="menu-icon">☰ <span class="sr-only" aria-hidden="false">Open
+                        Menu</span></label>
+
 
                 <div class="col2 menu-dropdown">
-                    <nav>
+                    <h2 id="menu-principal">Menú Principal</h2>
+                    <nav aria-labelledby="menu-principal">
                         <ul>
-                            <li><a href="/Home">Home</a> </li>
-                            <li><a href="/About">About</a> </li>
-                            <li><a href="/Services">Services</a> </li>
-                            <li><a href="/Pricing">Pricing</a> </li>
-                            <li><a href="/Products">Products</a> </li>
-                            <li><a href="/Resources">Resources</a> </li>
-                            <li><a href="#search" class="cart-icon"><i class="fas fa-shopping-bag"></i></a></li>
-                            <li><a href="#search" class="search-icon"><i class="fas fa-search"></i></a></li>
+                            <li><a href="#" aria-hidden="true">Home</a> </li>
+                            <li><a href="#" aria-hidden="true">About</a> </li>
+                            <li><a href="#" aria-hidden="true">Services</a> </li>
+                            <li><a href="#" aria-hidden="true">Pricing</a> </li>
+                            <li><a href="#" aria-hidden="true">Products</a> </li>
+                            <li><a href="#" aria-hidden="true">Resources</a> </li>
+                            <li><a href="#" aria-hidden="true" class="cart-icon"><span class="fas fa-shopping-bag"
+                                        aria-hidden="true"></span></a></li>
+                            <li><a href="#" aria-hidden="true" class="search-icon"><span class="fas fa-search"
+                                        aria-hidden="true"></span></a></li>
 
                         </ul>
 
@@ -45,11 +55,13 @@
                     </section>
                 </div>
 
-                <label for="menu-toggle" class="menu-overlay"></label>
+                <label for="menu-toggle" class="menu-overlay" aria-labelledby="close-menu-label">
+                    <span id="close-menu-label" class="sr-only">Close Menu</span>
+                </label>
             </header>
 
         </div>
-        <main>
+        <main id="main-content">
 
             <section class="intro-section">
                 <h1>Business hand in hand with our technology</h1>
@@ -70,62 +82,68 @@
         <div class="card-container">
             <div class="card">
                 <div class="icon-container">
-                    <i class="fas fa-laptop"></i> <!-- Aquí se usa el icono de laptop, puedes cambiarlo -->
+                    <span class="fas fa-laptop" aria-hidden="true"></span>
+                    <!-- Aquí se usa el icono de laptop, puedes cambiarlo -->
                 </div>
                 <a href="/Business Analysis">Business Analysis</a>
                 <p>We understand business needs and complexity to assist with the demands of change and problem solving.
                 </p>
-                <i class="arrow fas fa-arrow-right"></i> <!-- Flecha -->
+                <span class="arrow fas fa-arrow-right" aria-hidden="true"></span> <!-- Flecha -->
                 <div class="line"></div> <!-- Línea azul -->
             </div>
             <div class="card">
                 <div class="icon-container">
-                    <i class="fas fa-laptop"></i> <!-- Aquí se usa el icono de laptop, puedes cambiarlo -->
+                    <span class="fas fa-laptop" aria-hidden="true"></span>
+                    <!-- Aquí se usa el icono de laptop, puedes cambiarlo -->
                 </div>
                 <a href="/About">Data Engineering</a>
                 <p>We understand business needs and complexity to assist with the demands of change and problem solving.
                 </p>
-                <i class="arrow fas fa-arrow-right"></i> <!-- Flecha -->
+                <span class="arrow fas fa-arrow-right" aria-hidden="true"></span> <!-- Flecha -->
                 <div class="line"></div> <!-- Línea azul -->
             </div>
             <div class="card">
                 <div class="icon-container">
-                    <i class="fas fa-laptop"></i> <!-- Aquí se usa el icono de laptop, puedes cambiarlo -->
+                    <span class="fas fa-laptop" aria-hidden="true"></span>
+                    <!-- Aquí se usa el icono de laptop, puedes cambiarlo -->
                 </div>
                 <a href="/Data Engineering">Project Management</a>
                 <p>We understand business needs and complexity to assist with the demands of change and problem solving.
                 </p>
-                <i class="arrow fas fa-arrow-right"></i> <!-- Flecha -->
+                <span class="arrow fas fa-arrow-right" aria-hidden="true"></span> <!-- Flecha -->
                 <div class="line"></div> <!-- Línea azul -->
             </div>
             <div class="card">
                 <div class="icon-container">
-                    <i class="fas fa-laptop"></i> <!-- Aquí se usa el icono de laptop, puedes cambiarlo -->
+                    <span class="fas fa-laptop" aria-hidden="true"></span>
+                    <!-- Aquí se usa el icono de laptop, puedes cambiarlo -->
                 </div>
                 <a href="/Business Coaching">Business Coaching</a>
                 <p>We understand business needs and complexity to assist with the demands of change and problem solving.
                 </p>
-                <i class="arrow fas fa-arrow-right"></i> <!-- Flecha -->
+                <span class="arrow fas fa-arrow-right" aria-hidden="true"></span> <!-- Flecha -->
                 <div class="line"></div> <!-- Línea azul -->
             </div>
             <div class="card">
                 <div class="icon-container">
-                    <i class="fas fa-laptop"></i> <!-- Aquí se usa el icono de laptop, puedes cambiarlo -->
+                    <span class="fas fa-laptop" aria-hidden="true"></span>
+                    <!-- Aquí se usa el icono de laptop, puedes cambiarlo -->
                 </div>
                 <a href="/HR Support">HR Support</a>
                 <p>We understand business needs and complexity to assist with the demands of change and problem solving.
                 </p>
-                <i class="arrow fas fa-arrow-right"></i> <!-- Flecha -->
+                <span class="arrow fas fa-arrow-right" aria-hidden="true"></span> <!-- Flecha -->
                 <div class="line"></div> <!-- Línea azul -->
             </div>
             <div class="card">
                 <div class="icon-container">
-                    <i class="fas fa-laptop"></i> <!-- Aquí se usa el icono de laptop, puedes cambiarlo -->
+                    <span class="fas fa-laptop" aria-hidden="true"></span>
+                    <!-- Aquí se usa el icono de laptop, puedes cambiarlo -->
                 </div>
                 <a href="/Get Started">Management Consulting</a>
                 <p>We understand business needs and complexity to assist with the demands of change and problem solving.
                 </p>
-                <i class="arrow fas fa-arrow-right"></i> <!-- Flecha -->
+                <span class="arrow fas fa-arrow-right" aria-hidden="true"></span> <!-- Flecha -->
                 <div class="line"></div> <!-- Línea azul -->
             </div>
         </div>
@@ -142,7 +160,7 @@
             <p>Prelude exists to help companies inspire, adapt and take advantage of change. We orchestrate people,
                 systems, processes and technology to work together and better our clients' businesses.</p>
         </div>
-        <a href="/Get Started">Get Started</a>
+        <a href="/Get Started" class="get-started">Get Started</a>
     </section>
 
 
@@ -155,19 +173,19 @@
         </div>
         <div class="text-content">
             <h1>Real-time document collaboration</h1>
-            <article>
+            <article aria-labelledby="workspace-title">
                 <div class="grid-container">
-                    <i class="bi bi-diagram-3-fill"></i>
-                    <h2>Introducing workspaces</h2>
+                    <span class="bi bi-diagram-3-fill" aria-hidden="true"></span>
+                    <h2 id="workspace-title">Introducing workspaces</h2>
                 </div>
                 <div class="texto">
                     <p>Each workspace centralizes your data, team activities and tools. Focus more on what matters</p>
                 </div>
             </article>
-            <article>
+            <article aria-labelledby="productivity-title">
                 <div class="grid-container">
-                    <i class="bi bi-bar-chart-line-fill"></i>
-                    <h2>Increase productivity</h2>
+                    <span class="bi bi-bar-chart-line-fill" aria-hidden="true"></span>
+                    <h2 id="productivity-title">Increase productivity</h2>
                 </div>
                 <div class="texto">
                     <p>Each workspace centralizes your data, team activities and tools. Focus more on what matters</p>
@@ -200,15 +218,15 @@
 
     <section class="pricing-section">
         <div class="centered-content">
-            <h3>Choose the plan that's right for your business</h3>
+            <h3 id="pricing-title">Choose the plan that's right for your business</h3>
             <p>Let's see how we can partner with your business to navigate the ever-changing world and achieve business
                 success</p>
-            <i class="bi bi-toggle-on fs-6"></i>
+            <span class="bi bi-toggle-on fs-6" aria-hidden="true"></span>
         </div>
         <div class="card-container">
-            <article class="card">
+            <article class="card" aria-labelledby="basic-plan">
                 <ul>
-                    <li><a href="/BASIC">BASIC</a> </li>
+                    <li><a href="/BASIC" id="basic-plan">BASIC</a> </li>
                     <li class="precio">$29.00</li>
                     <li>Up to 100 open invoices</li>
                     <li>Payment & accounting</li>
@@ -219,9 +237,9 @@
                     <li class="fees">No Hidden Fees</li>
                 </ul>
             </article>
-            <article class="card">
+            <article class="card" aria-labelledby="popular-plan">
                 <ul>
-                    <li><a href="/POPULAR">POPULAR</a> </li>
+                    <li><a href="/POPULAR" id="popular-plan">POPULAR</a> </li>
                     <li class="precio">$49.00</li>
                     <li>Up to 100 open invoices</li>
                     <li>Payment & accounting</li>
@@ -232,9 +250,9 @@
                     <li class="fees">No Hidden Fees</li>
                 </ul>
             </article>
-            <article class="card">
+            <article class="card" aria-labelledby="premium-plan">
                 <ul>
-                    <li><a href="/PREMIUM">PREMIUM</a> </li>
+                    <li><a href="/PREMIUM" id="premium-plan">PREMIUM</a> </li>
                     <li class="precio">$59.00</li>
                     <li>Up to 100 open invoices</li>
                     <li>Payment & accounting</li>
@@ -260,7 +278,7 @@
                     </li>
                     <li>If your business depends on you, you don't own a business - you have a job</li>
                 </ul>
-                <i class="fas fa-arrow-right arrow-icon"></i>
+                <span class="fas fa-arrow-right arrow-icon" aria-hidden="true"></span>
             </div>
             <div class="latest-card">
                 <ul>
@@ -275,7 +293,7 @@
                         STELLA SMITH
                     </li>
                 </ul>
-                <i class="fas fa-arrow-right arrow-icon"></i>
+                <span class="fas fa-arrow-right arrow-icon" aria-hidden="true"></span>
             </div>
             <div class="latest-card">
                 <ul>
@@ -288,7 +306,7 @@
                         </div>MONICA SMITH
                     </li>
                 </ul>
-                <i class="fas fa-arrow-right arrow-icon"></i>
+                <span class="fas fa-arrow-right arrow-icon" aria-hidden="true"></span>
             </div>
             <div class="latest-card">
                 <ul>
@@ -301,7 +319,7 @@
                         </div>ERNEST SMITH
                     </li>
                 </ul>
-                <i class="fas fa-arrow-right arrow-icon"></i>
+                <span class="fas fa-arrow-right arrow-icon" aria-hidden="true"></span>
             </div>
         </div>
     </section>
@@ -362,8 +380,8 @@
             </div>
 
             <div class="about">
-                <nav>
-                    <h4>About</h4>
+                <nav aria-labelledby="about-nav">
+                    <h4 id="about-nav">About</h4>
                     <ul>
                         <li><a href="/Services">Services</a> </li>
                         <li><a href="/Portfolio">Portfolio</a> </li>
@@ -374,8 +392,8 @@
             </div>
 
             <div class="products">
-                <nav>
-                    <h4>Products</h4>
+                <nav aria-labelledby="products-nav">
+                    <h4 id="products-nav">Products</h4>
                     <ul>
                         <li><a href="/Platform">Platform </a></li>
                         <li><a href="/Customers">Customers</a> </li>
@@ -386,8 +404,8 @@
             </div>
 
             <div class="resources">
-                <nav>
-                    <h4>Resources</h4>
+                <nav aria-labelledby="resources-nav">
+                    <h4 id="resources-nav">Resources</h4>
                     <ul>
                         <li><a href="/Training">Training</a> </li>
                         <li><a href="/Marketplace"> Marketplace</a></li>
@@ -398,12 +416,13 @@
             </div>
 
             <div class="offices">
-                <nav>
-                    <h4>Offices</h4>
+                <nav aria-labelledby="offices-title">
+                    <h4 id="offices-title">Offices</h4>
                     <p>New York. 112 W 34th St, Manhattan. USA.</p>
-                    <p class="telefono-azul">(1)212-946-2707</p>
+                    <p class="telefono-azul">(1) 212-946-2707</p>
                 </nav>
             </div>
+
         </div>
     </section>
 
