@@ -302,14 +302,6 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
 .tarjetas {
     margin: 0;
     /* Elimina el margen para que el contenido quede más compacto */
@@ -552,8 +544,6 @@ body {
 }
 
 
-
-
 .segunda-foto-section {
     display: flex;
     /* Usa flexbox para organizar el contenido */
@@ -693,11 +683,6 @@ body {
 }
 
 
-
-
-
-
-
 .seccion-imagen-y-texto {
     display: flex;
     /* Usar flexbox para alinear los elementos */
@@ -806,10 +791,6 @@ body {
 }
 
 
-
-
-
-
 .cuadrados {
     background-color: #0563af;
     padding: 40px;
@@ -851,9 +832,6 @@ body {
     }
 
 }
-
-
-
 
 
 .pricing-section {
@@ -1064,9 +1042,6 @@ body {
     }
 }
 
-
-
-
 /* LATEST NEWS */
 .latest-section {
     display: flex;
@@ -1206,11 +1181,6 @@ body {
 }
 
 
-
-
-
-
-
 .get-in-touch {
     background-image: url('../img/get-in-touch.jpg');
     background-size: cover;
@@ -1271,8 +1241,6 @@ body {
 	}
 
 }
-
-
 
 
 .contacto-final {
@@ -1397,7 +1365,6 @@ footer {
     background-color: #f7f0f0;
     /* Gris muy claro */
 }
-
 
 /* 🔹 MEJORAS DE ACCESIBILIDAD PARA ENLACES Y BOTONES */
 
