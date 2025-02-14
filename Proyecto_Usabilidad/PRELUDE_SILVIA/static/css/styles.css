@@ -1212,7 +1212,7 @@ body {
 
 
 .get-in-touch {
-    background-image: url('../img/get-in-touch.jpg');
+    background-image: url('../img/get-in-touch.webp');
     background-size: cover;
     /* Asegura que la imagen cubra todo el fondo */
     background-position: center;
