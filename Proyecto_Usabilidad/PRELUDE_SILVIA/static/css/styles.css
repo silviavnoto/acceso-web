@@ -1150,7 +1150,7 @@ body {
         }
 
         &:first-child {
-            background-image: url('../img/latest-card-1ero.jpg');
+            background-image: url('../img/latest-card-1ero.webp');
             background-size: cover;
             background-position: center;
             color: white;
