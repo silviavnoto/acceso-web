@@ -565,7 +565,7 @@ body {
     /* Espacio interno */
     height: 80vh;
     /* Ajusta la altura al 80% de la pantalla */
-    background-image: url('../img/manocontablet.jpg');
+    background-image: url('../img/manocontablet.webp');
     /* Cambia 'ruta-de-tu-imagen.jpg' por la URL de tu imagen */
     background-size: cover;
     /* Asegura que la imagen cubra todo el fondo */
